@@ -4,10 +4,17 @@
 ## 1. Overview
 
 This repository presents an anonymous security assessment case study for a mobile‑first SaaS marketplace platform connecting coaches and clients.  
-It is based on real assessment work I completed as part of a supervised university internship, but all names, code and architecture details have been fully anonymised to respect confidentiality.[cite:18][cite:19][cite:74]
+It is based on real assessment work I completed as part of a supervised university internship, but all names, code and architecture details have been fully anonymised to respect confidentiality.
 
 The goal of this case study is to demonstrate how I approach end‑to‑end security assessment for a modern SaaS product – from architecture and threat modelling through to risk register, control mapping and executive reporting.
 
+
+This portfolio project is targeted at graduate and junior roles in:
+
+- Cyber risk and GRC
+- Security analyst / security operations
+- Security assessment and advisory for SaaS and cloud platforms
+  
 ---
 
 ## 2. Scenario
@@ -50,7 +57,7 @@ The assessment is documented across the `docs/` folder:
 - `08-cloud-and-monitoring-review.md` – logging, alerting and configuration
 - `09-grc-gap-analysis.md` – mapping to baseline controls and policies
 - `10-risk-register.md` – consolidated risk list with ratings and owners
-- `11-remediation-roadmap.md` – 30/60/90‑day remediation plan
+- `11-remediation-roadmap.md` – 3 stages remediation plan
 - `12-executive-summary.md` – 1‑page overview for non‑technical readers
 - `13-lessons-learned.md` – what I learned and would do differently next time
 
