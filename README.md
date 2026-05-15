@@ -26,7 +26,7 @@ The company is preparing to scale its product and wants a structured view of sec
 
 ## 3. Objectives
 
-This case study focuses on five objectives that mirror real client needs:[cite:25][cite:74][web:86][web:92]
+This case study focuses on five objectives that mirror real client needs.
 
 1. Understand the current architecture and identify key assets and trust boundaries.  
 2. Perform threat modelling to identify likely attack paths against the platform.  
@@ -54,13 +54,13 @@ The assessment is documented across the `docs/` folder:
 - `12-executive-summary.md` – 1‑page overview for non‑technical readers
 - `13-lessons-learned.md` – what I learned and would do differently next time
 
-Supporting artefacts such as CSV risk registers, control mapping spreadsheets and sample findings templates live under `artifacts/`.[cite:74][web:86][web:92]
+Supporting artefacts such as CSV risk registers, control mapping spreadsheets and sample findings templates live under `artifacts/`.
 
 ---
 
 ## 5. Methodology
 
-I followed a structured but lightweight methodology aligned with how SaaS security assessments are performed in practice:[web:86][web:92]
+I followed a structured but lightweight methodology aligned with how SaaS security assessments are performed in practice.
 
 1. **Scoping and assumptions**  
    Clarified what systems, environments and timeframes were in scope, and documented key assumptions and constraints.
@@ -69,16 +69,16 @@ I followed a structured but lightweight methodology aligned with how SaaS securi
    Mapped core components, data stores, data flows, user roles and trust boundaries into simple diagrams.
 
 3. **Threat modelling (STRIDE)**  
-   Applied STRIDE to key components and flows to identify plausible threats and attack paths, then prioritised by likelihood and impact.[cite:75][cite:78]
+   Applied STRIDE to key components and flows to identify plausible threats and attack paths, then prioritised by likelihood and impact.
 
 4. **Control and configuration review**  
-   Assessed authentication, authorisation, API patterns, secrets management, logging and monitoring against common good practices and baseline control expectations.[cite:18][cite:74]
+   Assessed authentication, authorisation, API patterns, secrets management, logging and monitoring against common good practices and baseline control expectations.
 
 5. **Risk register and GRC gap analysis**  
-   Consolidated findings into a risk register, mapped them to governance and control themes, and highlighted gaps that matter most for a small SaaS business.[cite:18][cite:24]
+   Consolidated findings into a risk register, mapped them to governance and control themes, and highlighted gaps that matter most for a small SaaS business.
 
 6. **Remediation roadmap & reporting**  
-   Grouped recommendations into 30/60/90‑day milestones and created both detailed and executive‑level summaries for different audiences.
+   Grouped recommendations into three implementation phases and created both detailed and executive‑level summaries for different audiences.
 
 ---
 
@@ -97,26 +97,26 @@ The detailed findings and recommendations are documented in the risk register, c
 
 ## 7. Skills demonstrated
 
-This case study is designed to demonstrate skills that are directly relevant to entry‑level cyber roles in Australia:[web:46][web:48][web:50][web:85]
+This case study is designed to demonstrate skills that are directly relevant to entry‑level cyber roles in Australia.
 
 - **Risk assessment:** converting technical issues into structured risks with likelihood, impact and priority.  
 - **Threat modelling:** using STRIDE and data‑flow diagrams to think about attacker paths.  
-- **Secure design review:** assessing auth, API and data handling patterns in a modern SaaS stack.[cite:18][cite:78]  
-- **Cloud & monitoring literacy:** understanding why logs, audit trails and alerting matter for detection and investigation.[cite:26][cite:74]  
-- **GRC mindset:** linking technical findings to control frameworks and governance concepts.[cite:24][cite:22]  
+- **Secure design review:** assessing auth, API and data handling patterns in a modern SaaS stack.  
+- **Cloud & monitoring literacy:** understanding why logs, audit trails and alerting matter for detection and investigation. 
+- **GRC mindset:** linking technical findings to control frameworks and governance concepts. 
 - **Communication:** producing both detailed technical notes and concise executive‑style summaries.
 
 ---
 
 ## 8. How this relates to my experience
 
-This case study is based on work I carried out during a supervised security assessment internship for a real mobile‑first SaaS marketplace, completed as part of my Master of Cyber Security.[cite:16][cite:18][cite:25]  
+This case study is based on work I carried out during a supervised security assessment internship for a real mobile‑first SaaS marketplace, completed as part of my Master of Cyber Security. 
 In the original project I contributed to:
 
 - Reviewing documentation and code in Git‑based repositories  
 - Designing and using structured checklists for auth/API/cloud controls  
 - Performing threat modelling and risk prioritisation  
-- Drafting GRC‑oriented recommendations and security reports, including a risk register and remediation plan.[cite:18][cite:19][cite:74]
+- Drafting GRC‑oriented recommendations and security reports, including a risk register and remediation plan.
 
 All client‑specific details have been removed or replaced with generic examples.  
 The focus here is on demonstrating my process and judgement, not on exposing proprietary information.
