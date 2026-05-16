@@ -1,145 +1,139 @@
-
 # Anonymous SaaS Security Assessment Case Study
 
-## 1. Overview
+## Overview
 
-This repository presents an anonymous security assessment case study for a mobile‑first SaaS marketplace platform connecting coaches and clients.  
-It is based on real assessment work I completed as part of a supervised university internship, but all names, code and architecture details have been fully anonymised to respect confidentiality.
+This repository presents an anonymised security assessment case study for a mobile-first SaaS marketplace platform connecting coaches and clients.
 
-The goal of this case study is to demonstrate how I approach end‑to‑end security assessment for a modern SaaS product – from architecture and threat modelling through to risk register, control mapping and executive reporting.
+It is based on real assessment work I completed as part of a supervised university internship, but all names, code and architecture details have been removed or generalised to protect confidentiality.
 
+The purpose of this case study is to demonstrate how I approach end-to-end security assessment for a modern SaaS product, from architecture review and threat modelling through to risk analysis, control mapping and executive reporting.
 
 This portfolio project is targeted at graduate and junior roles in:
 
 - Cyber risk and GRC
 - Security analyst / security operations
 - Security assessment and advisory for SaaS and cloud platforms
-  
----
 
-## 2. Scenario
+## Scenario
 
-The (fictional) platform is a TypeScript‑based SaaS marketplace with:
+The fictional platform in this case study is a TypeScript-based SaaS marketplace with:
 
-- Mobile‑first client and coach applications
+- Mobile-first client and coach applications
 - Backend APIs for onboarding, booking and messaging
-- Third‑party payments integration
-- Cloud‑hosted database and storage
+- Third-party payments integration
+- Cloud-hosted database and storage
 - Basic logging and monitoring in the cloud platform
 
-The company is preparing to scale its product and wants a structured view of security risks, gaps against common controls, and a practical remediation roadmap.
+The company is preparing to scale its product and needs a structured view of security risks, key control gaps and a practical remediation plan.
 
----
+## Objectives
 
-## 3. Objectives
+This case study focuses on five objectives that mirror real client needs:
 
-This case study focuses on five objectives that mirror real client needs.
+1. Understand the architecture and identify key assets and trust boundaries.
+2. Perform threat modelling to identify likely attack paths against the platform.
+3. Review authentication, authorisation and API/data handling practices.
+4. Assess cloud configuration, logging and monitoring from a security perspective.
+5. Produce a risk register, control-oriented gap analysis and a remediation plan that non-technical stakeholders can understand.
 
-1. Understand the current architecture and identify key assets and trust boundaries.  
-2. Perform threat modelling to identify likely attack paths against the platform.  
-3. Review authentication, authorisation and API/data handling practices.  
-4. Assess cloud configuration, logging and monitoring from a security perspective.  
-5. Produce a risk register, control‑oriented gap analysis and a remediation roadmap that non‑technical stakeholders can understand.
+## Repository structure
 
----
+### Current documentation
 
-## 4. What this case study covers
+The following files are currently available in the `docs/` folder:
 
-The assessment is documented across the `docs/` folder:
+- `01-project-overview.md` – context, goals and purpose of the case study
+- `02-scope-and-assumptions.md` – in-scope areas, exclusions and working assumptions
+- `03-architecture-summary.md` – high-level system architecture, user roles and trust boundaries
+- `04-threat-model.md` – STRIDE-based threat model with representative examples
 
-- `01-project-overview.md` – context, goals and scope
-- `02-scope-and-assumptions.md` – what is in scope vs out of scope
-- `03-architecture-summary.md` – high‑level system architecture and data flows
-- `04-threat-model.md` – STRIDE‑based threat model with diagrams
-- `05-attack-surface.md` – main entry points and exposure
-- `06-auth-and-authorization-review.md` – login, sessions, roles and access controls
-- `07-api-and-data-security-review.md` – endpoints, input validation and data protection
-- `08-cloud-and-monitoring-review.md` – logging, alerting and configuration
-- `09-grc-gap-analysis.md` – mapping to baseline controls and policies
-- `10-risk-register.md` – consolidated risk list with ratings and owners
-- `11-remediation-roadmap.md` – 3 stages remediation plan
-- `12-executive-summary.md` – 1‑page overview for non‑technical readers
-- `13-lessons-learned.md` – what I learned and would do differently next time
+### Supporting artifacts
 
-Supporting artefacts such as CSV risk registers, control mapping spreadsheets and sample findings templates live under `artifacts/`.
+Additional supporting material is stored in `artifacts/`:
 
----
+- `auth-api-security-checklist.md` – anonymised 32-check review checklist covering authentication, API access control, cloud configuration and logging
 
-## 5. Methodology
+### Planned next deliverables
 
-I followed a structured but lightweight methodology aligned with how SaaS security assessments are performed in practice.
+The following documents are planned as the next phase of the case study:
+
+- `05-attack-surface.md`
+- `06-auth-and-authorization-review.md`
+- `07-api-and-data-security-review.md`
+- `08-cloud-and-monitoring-review.md`
+- `09-grc-gap-analysis.md`
+- `10-risk-register.md`
+- `11-remediation-roadmap.md`
+- `12-executive-summary.md`
+- `13-lessons-learned.md`
+
+## Methodology
+
+I followed a structured but lightweight methodology aligned with practical SaaS security assessment work:
 
 1. **Scoping and assumptions**  
-   Clarified what systems, environments and timeframes were in scope, and documented key assumptions and constraints.
+   Defined the systems, environments and constraints relevant to the review.
 
 2. **Architecture and asset discovery**  
-   Mapped core components, data stores, data flows, user roles and trust boundaries into simple diagrams.
+   Mapped core components, users, trust boundaries and major data flows.
 
 3. **Threat modelling (STRIDE)**  
-   Applied STRIDE to key components and flows to identify plausible threats and attack paths, then prioritised by likelihood and impact.
+   Applied STRIDE to key components and interactions to identify plausible threats and attack paths.
 
 4. **Control and configuration review**  
-   Assessed authentication, authorisation, API patterns, secrets management, logging and monitoring against common good practices and baseline control expectations.
+   Reviewed authentication, authorisation, API patterns, secrets handling, logging and monitoring against baseline good practices.
 
-5. **Risk register and GRC gap analysis**  
-   Consolidated findings into a risk register, mapped them to governance and control themes, and highlighted gaps that matter most for a small SaaS business.
+5. **Risk analysis and GRC alignment**  
+   Consolidated findings into a risk-oriented view and linked them to control and governance themes relevant to a small SaaS organisation.
 
-6. **Remediation roadmap & reporting**  
-   Grouped recommendations into three implementation phases and created both detailed and executive‑level summaries for different audiences.
+6. **Remediation planning and reporting**  
+   Grouped recommendations into three implementation phases and prepared both detailed and executive-level summaries for different audiences.
 
----
+## Key themes
 
-## 6. Key findings (summarised)
+This case study highlights patterns commonly found in early-stage SaaS platforms, including:
 
-This case study highlights patterns commonly found in early‑stage SaaS platforms, such as:
+- Over-permissive access patterns in selected API routes or internal tooling
+- Limited separation of administrative and tenant-level access
+- Inconsistent logging and alerting for security-relevant events
+- Gaps in operational controls such as access review, key rotation and incident handling
 
-- Over‑permissive access patterns for certain API routes and internal tooling
-- Limited segmentation of admin functions and tenant data access
-- Inconsistent logging and alerting for security‑relevant events
-- Gaps in formal policies around access reviews, key rotation and incident response
+These themes are explored through the threat model, checklist-driven review approach and the planned risk register and remediation roadmap.
 
-The detailed findings and recommendations are documented in the risk register, control mapping and remediation roadmap files.
+## Skills demonstrated
 
----
+This case study is designed to demonstrate skills relevant to entry-level cyber roles in Australia, including:
 
-## 7. Skills demonstrated
+- Risk assessment and prioritisation
+- Threat modelling using STRIDE
+- Secure design and API review
+- Cloud and monitoring literacy
+- GRC-oriented thinking
+- Clear written communication for both technical and non-technical audiences
 
-This case study is designed to demonstrate skills that are directly relevant to entry‑level cyber roles in Australia.
+## Relationship to my experience
 
-- **Risk assessment:** converting technical issues into structured risks with likelihood, impact and priority.  
-- **Threat modelling:** using STRIDE and data‑flow diagrams to think about attacker paths.  
-- **Secure design review:** assessing auth, API and data handling patterns in a modern SaaS stack.  
-- **Cloud & monitoring literacy:** understanding why logs, audit trails and alerting matter for detection and investigation. 
-- **GRC mindset:** linking technical findings to control frameworks and governance concepts. 
-- **Communication:** producing both detailed technical notes and concise executive‑style summaries.
+This case study is based on work I carried out during a supervised security assessment internship for a real mobile-first SaaS platform completed as part of my Master of Cyber Security.
 
----
-
-## 8. How this relates to my experience
-
-This case study is based on work I carried out during a supervised security assessment internship for a real mobile‑first SaaS marketplace, completed as part of my Master of Cyber Security. 
 In the original project I contributed to:
 
-- Reviewing documentation and code in Git‑based repositories  
-- Designing and using structured checklists for auth/API/cloud controls  
-- Performing threat modelling and risk prioritisation  
-- Drafting GRC‑oriented recommendations and security reports, including a risk register and remediation plan.
+- Reviewing documentation and code in Git-based repositories
+- Designing and using structured checklists for auth, API and cloud controls
+- Performing threat modelling and risk prioritisation
+- Drafting GRC-oriented recommendations and security reporting, including a risk register and remediation plan
 
-All client‑specific details have been removed or replaced with generic examples.  
-The focus here is on demonstrating my process and judgement, not on exposing proprietary information.
+All client-specific details have been removed or replaced with generic examples.
 
----
+The focus of this repository is to demonstrate my process, judgement and communication style rather than expose proprietary information.
 
-## 9. How to read this repo
+## Suggested reading path
 
-If you are a recruiter or hiring manager, a suggested reading path is:
+If you are a recruiter, hiring manager or interviewer, a suggested reading path is:
 
-1. This `README.md`  
-2. `docs/01-project-overview.md` and `docs/03-architecture-summary.md`  
-3. `docs/04-threat-model.md`  
-4. `docs/10-risk-register.md` and `docs/11-remediation-roadmap.md`  
-5. `docs/12-executive-summary.md`
+1. `README.md`
+2. `docs/01-project-overview.md`
+3. `docs/03-architecture-summary.md`
+4. `docs/04-threat-model.md`
+5. `artifacts/auth-api-security-checklist.md`
 
-I’m happy to walk through this case study in an interview and explain what I would do next as the platform and organisation mature.
-
----
+As the project develops, this reading path will extend to the risk register, remediation roadmap and executive summary.
