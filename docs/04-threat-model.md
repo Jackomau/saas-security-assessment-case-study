@@ -58,6 +58,11 @@ High‑level security objectives are to preserve:
 This section provides example threats for a subset of components, using the STRIDE categories as a guide.  
 In a full assessment, each component and data flow from the architecture summary would be examined in similar fashion.
 
+A more detailed, implementation‑level checklist for authentication, API access control,
+cloud configuration and logging is provided in
+`artifacts/auth-api-security-checklist.md`. That checklist was used during the original
+review to ensure consistent coverage across endpoints.
+
 ### 4.4.1 Frontend applications (web and mobile)
 
 **Spoofing**
