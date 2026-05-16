@@ -52,6 +52,7 @@ The following files are currently available in the `docs/` folder:
 Additional supporting material is stored in `artifacts/`:
 
 - `auth-api-security-checklist.md` – anonymised 32-check review checklist covering authentication, API access control, cloud configuration and logging
+- `risk-register.csv` – sortable risk register for tracking owner, priority, status and target phase
 
 ### Planned next deliverables
 
